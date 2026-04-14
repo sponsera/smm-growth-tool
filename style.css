@@ -429,3 +429,23 @@ body {
         gap: 2rem;
     }
 }
+/* 🔥 EMERGENCY INPUT FIX */
+#username {
+    flex: 1 !important;
+    min-width: 250px !important;
+    width: 100% !important;
+    max-width: 350px !important;
+}
+
+.input-group {
+    flex-wrap: nowrap !important;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column !important;
+    }
+    #username {
+        min-width: 100% !important;
+    }
+}
